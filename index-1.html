@@ -1,0 +1,495 @@
+ <!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <!-- مهم جداً لتجاوب الصفحة مع الجوال -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>مصر للعلاج - الرئيسية</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- CSS الخاص بالموقع -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+
+<body>
+
+
+<!-- =========================
+     Header
+========================= -->
+
+<header>
+
+    <h1>مصر للعلاج</h1>
+
+    <p>منصة السياحة العلاجية في مصر</p>
+
+    <br>
+    <br>
+    <br>
+
+    <nav>
+        <a href="HTML/login-1.html">تسجيل الدخول</a>
+         <a href="HTML/conect.html">
+        تواصل معنا
+    </a>
+
+        <!--
+        <a href="docs/general/suitable-hospitals.html">المستشفيات</a>
+        <a href="doctors.html">الأطباء</a>
+        <a href="booking.html">الحجز</a>
+        -->
+
+        <button type="button" onclick="openAboutModal()">
+            من نحن
+        </button>
+
+        <div id="aboutModal">
+
+            <button type="button" onclick="closeAboutModal()">
+                إغلاق
+            </button>
+
+            <div id="aboutContent"></div>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<!-- =========================
+     Slider
+========================= -->
+
+<section class="hero-slider">
+
+    <div id="mainSlider"
+         class="carousel slide"
+         data-bs-ride="carousel"
+         data-bs-interval="3000">
+
+        <!-- النقاط -->
+
+        <div class="carousel-indicators">
+
+            <button type="button"
+                    data-bs-target="#mainSlider"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="الشريحة الأولى">
+            </button>
+
+            <button type="button"
+                    data-bs-target="#mainSlider"
+                    data-bs-slide-to="1"
+                    aria-label="الشريحة الثانية">
+            </button>
+
+            <button type="button"
+                    data-bs-target="#mainSlider"
+                    data-bs-slide-to="2"
+                    aria-label="الشريحة الثالثة">
+            </button>
+
+            <button type="button"
+                    data-bs-target="#mainSlider"
+                    data-bs-slide-to="3"
+                    aria-label="الشريحة الرابعة">
+            </button>
+
+        </div>
+
+
+        <!-- الصور -->
+
+        <div class="carousel-inner">
+
+
+            <!-- الصورة الأولى -->
+
+            <div class="carousel-item active">
+
+                <img src="IMAGES/image3.png"
+                     class="d-block w-100"
+                     alt="التحقق من الأخبار">
+
+                <div class="hero-caption">
+
+                    
+
+                
+                
+                
+
+                    <a href="HTML/messages.html"
+                       class="btn btn-primary">
+                        ابدأ الآن
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- الصورة الثانية -->
+
+            <div class="carousel-item">
+
+                <img src="IMAGES/image4.png"
+                     class="d-block w-100"
+                     alt="التحقق من الصور">
+
+                <div class="hero-caption">
+
+                    <h1>هل الصورة حقيقية؟</h1>
+
+                    <p>
+                        تعلم طرق التحقق من الصور ومصادرها.
+                    </p>
+
+                    <a href="HTML/images.html"
+                       class="btn btn-primary">
+                        مختبر الصور
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- الصورة الثالثة -->
+
+            <div class="carousel-item">
+
+                <img src="IMAGES/image1.png"
+                     class="d-block w-100"
+                     alt="التحقق من الروابط">
+
+                <div class="hero-caption">
+
+                    
+
+
+                    <a href="HTML/links.html"
+                       class="btn btn-primary">
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="carousel-item">
+
+                <img src="IMAGES/image2.png"
+                     class="d-block w-100"
+                     alt="الذكاء الاصطناعي">
+
+                <div class="hero-caption">
+
+                    <h1>هل صنعها الذكاء الاصطناعي؟</h1>
+
+                    <p>
+                        تعلم كيفية التمييز بين المحتوى الحقيقي والمصطنع.
+                    </p>
+
+                    <a href="HTML/ai.html"
+                       class="btn btn-primary">
+                        مختبر الذكاء الاصطناعي
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- السابق -->
+
+        <button class="carousel-control-prev"
+                type="button"
+                data-bs-target="#mainSlider"
+                data-bs-slide="prev"
+                aria-label="الصورة السابقة">
+
+            <span class="carousel-control-prev-icon"></span>
+
+        </button>
+
+
+        <!-- التالي -->
+
+        <button class="carousel-control-next"
+                type="button"
+                data-bs-target="#mainSlider"
+                data-bs-slide="next"
+                aria-label="الصورة التالية">
+
+            <span class="carousel-control-next-icon"></span>
+
+        </button>
+
+    </div>
+
+</section>
+
+
+<hr>
+
+
+<!-- =========================
+     المحتوى الرئيسي
+========================= -->
+
+<main>
+
+
+    <!-- بداية الرحلة -->
+
+    <section>
+
+        <h2>ابدأ رحلتك العلاجية في مصر</h2>
+
+        <p>
+            نساعدك في الوصول إلى المستشفى والطبيب المناسبين
+            حسب حالتك الصحية.
+        </p>
+
+        <a href="#start">
+            ابدأ الآن
+        </a>
+
+    </section>
+
+
+    <hr>
+
+
+    <!-- اختيار الحالة الصحية -->
+
+    <section id="start">
+
+        <h2>
+            قم بئختيار نوع المرض لنضهر لك المستشفيات المناسب
+        </h2>
+
+
+        <!--
+        <article>
+
+            <h3>لدي تقرير طبي</h3>
+
+            <p>
+                يمكنك رفع تقريرك الطبي ليتم تحديد الخيارات
+                المناسبة لحالتك.
+            </p>
+
+        </article>
+        -->
+
+
+        <article>
+
+            <p>
+                اختر نوع المرض أو الحالة الصحية للبحث عن
+                المستشفيات المناسبة.
+            </p>
+
+            <a href="HTML/medical-report-upload.html">
+                اختيار الحالة الصحية
+            </a>
+
+        </article>
+
+    </section>
+
+
+    <hr>
+
+
+    <!-- معلومات مختصرة عن الخدمة -->
+
+    <section>
+
+        <h2>ماذا نقدم؟</h2>
+
+        <ul>
+
+            <li>
+                اختيار المستشفى المناسب.
+            </li>
+
+            <li>
+                التعرف على الأطباء والتخصصات.
+            </li>
+
+            <li>
+                مقارنة التقييمات والأسعار التقريبية.
+            </li>
+
+            <li>
+                اختيار الطبيب المناسب.
+            </li>
+
+            <li>
+                حجز الموعد.
+            </li>
+
+        </ul>
+
+    </section>
+
+
+    <hr>
+
+
+    <!-- مستشفيات مقترحة -->
+
+    <section>
+
+        <h2>مستشفيات مقترحة</h2>
+
+
+        <article>
+
+            <h3>مستشفى النيل الدولي</h3>
+
+            <p>
+                القاهرة - التقييم: 4.8 / 5
+            </p>
+
+            <p>
+                السعر التقريبي: يبدأ من 500 دولار
+            </p>
+
+        </article>
+
+
+        <article>
+
+            <h3>مركز مصر الطبي</h3>
+
+            <p>
+                الجيزة - التقييم: 4.7 / 5
+            </p>
+
+            <p>
+                السعر التقريبي: يبدأ من 450 دولار
+            </p>
+
+        </article>
+
+
+        <p>
+
+            <a href="hospitals.html">
+                عرض جميع المستشفيات
+            </a>
+
+        </p>
+
+    </section>
+
+
+    <hr>
+
+
+    <!-- عن الموقع -->
+
+    <section>
+
+        <h2>لماذا مصر للعلاج؟</h2>
+
+        <p>
+            نهدف إلى تسهيل رحلة المريض من البحث عن العلاج
+            وحتى الوصول إلى الطبيب وحجز الموعد.
+        </p>
+
+        <a href="HTML/about.html">
+            تعرف علينا أكثر
+        </a>
+
+    </section>
+
+
+</main>
+
+
+<hr>
+
+
+<!-- =========================
+     Footer
+========================= -->
+
+<footer>
+
+    <p>
+        © 2026 مصر للعلاج
+    </p>
+
+    <p>
+        مشروع تصميم ويب
+    </p>
+
+   
+
+</footer>
+
+
+<!-- =========================
+     Bootstrap JavaScript
+========================= -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<!-- =========================
+     تشغيل السلايدر
+========================= -->
+
+<script>
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+        const slider = document.getElementById("mainSlider");
+
+        if (slider) {
+
+            new bootstrap.Carousel(slider, {
+                interval: 3000,
+                ride: "carousel",
+                pause: false,
+                wrap: true
+            });
+
+        }
+
+    });
+
+</script>
+
+
+<!-- ملفات JavaScript الخاصة بالموقع -->
+
+<script src="JS/proj.js"></script>
+
+<script src="JS/modal2.js"></script>
+
+
+</body>
+</html>
+

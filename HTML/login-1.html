@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول</title>
+    <link rel="stylesheet" href="../CSS/style-login.css">
+</head>
+<body>
+
+<header>
+    <h1>بوابة الرعاية الصحية</h1>
+    <nav>
+        <a href="../index-1.html">الرئيسية</a>
+        
+        <a href="conect.html">تواصل معنا</a>
+        
+    </nav>
+</header>
+
+<main class="auth-container">
+
+    <section class="auth-box" id="loginSection">
+        <h2>تسجيل الدخول</h2>
+        <p>سجل الدخول إلى حسابك للوصول إلى خدماتنا</p>
+
+        <form id="loginForm" novalidate>
+            <div class="input-group">
+                <label for="loginEmail">البريد الإلكتروني</label>
+                <input type="email" id="loginEmail" name="email" required>
+            </div>
+
+            <div class="input-group">
+                <label for="loginPassword">كلمة المرور</label>
+                <input type="password" id="loginPassword" name="password" required minlength="6">
+            </div>
+
+            <button type="submit" class="main-btn">تسجيل الدخول</button>
+        </form>
+
+        <p class="switch-text">
+            ليس لديك حساب؟
+            <button type="button" class="switch-btn" id="showRegister">إنشاء حساب جديد</button>
+        </p>
+    </section>
+
+    <section class="auth-box hidden" id="registerSection">
+        <h2>إنشاء حساب جديد</h2>
+        <p>أنشئ حسابك للاستفادة من خدمات بوابة الرعاية الصحية</p>
+
+        <form id="registerForm" novalidate>
+            <div class="input-group">
+                <label for="name">الاسم الكامل</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="input-group">
+                <label for="email">البريد الإلكتروني</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="input-group">
+                <label for="phone">رقم الهاتف</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">كلمة المرور</label>
+                <input type="password" id="password" name="password" required minlength="6">
+            </div>
+
+            <div class="input-group">
+                <label for="confirmPassword">تأكيد كلمة المرور</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required minlength="6">
+            </div>
+
+            <button type="submit" class="main-btn">إنشاء الحساب</button>
+        </form>
+
+        <p class="switch-text">
+            لديك حساب بالفعل؟
+            <button type="button" class="switch-btn" id="showLogin">تسجيل الدخول</button>
+        </p>
+    </section>
+
+</main>
+
+<footer>
+    <p>جميع الحقوق محفوظة © 2026 بوابة الرعاية الصحية</p>
+</footer>
+<!-- <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script> -->
+ <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js@1.12.0/src/toastify.main.css">
+ <script src="https://cdn.jsdelivr.net/npm/toastify-js@1.12.0/src/toastify.min.js"></script> -->
+ <link rel="stylesheet" href="../JS/toastify.min.css">
+ <script src="../JS/toastify.min.js"></script>
+<script src="../JS/login.js"></script>
+
+</body>
+</html>

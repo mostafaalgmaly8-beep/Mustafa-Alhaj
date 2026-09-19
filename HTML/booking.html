@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الحجز - تسمينة</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+
+    <main class="booking-page">
+
+        <h1>حجز موعد</h1>
+
+        <form id="bookingForm">
+
+            <input type="text" placeholder="الاسم الكامل" required>
+
+            <input type="tel" placeholder="رقم الهاتف" required>
+
+            <input type="date" required>
+
+            <button type="submit">تأكيد الحجز</button>
+
+        </form>
+
+        <p id="message"></p>
+
+        <button id="infoBtn">معلومات الحجز</button>
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span id="close">&times;</span>
+        <div id="modalBody"></div>
+    </div>
+</div>
+
+
+    </main>
+    <script src="../JS/jquery.min.js"></script>
+    
+<script src="../JS/conect.js"></script>
+<script src="../JS/JQuery.js"></script>
+    
+
+</body>
+</html>
